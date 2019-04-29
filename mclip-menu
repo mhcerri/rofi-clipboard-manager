@@ -1,5 +1,5 @@
 #!/bin/bash
 here="$(readlink -f "$(dirname "$0")")"
-mclip="$here/mclip.py"
+mclip="$here/mclip"
 rofi -modi "clipboard:$mclip menu" -show clipboard && \
 	"$mclip" paste
